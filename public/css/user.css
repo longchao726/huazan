@@ -1,0 +1,260 @@
+body{
+	background: #f8f8f8;
+}
+.clearfix:after{
+  content: '';
+  display: block;
+  clear: both;
+}
+.user_content{
+	padding-top: 40px;
+	color: #8c8c8c;
+}
+.user-side{
+	width: 260px;
+	margin-right: 20px;
+}
+.user-main{
+	width: 918px;
+}
+.user-mod{
+	background: #fff;
+	padding: 30px;
+	margin-bottom: 10px;
+}
+.user-side .profile{
+	margin-bottom: 20px;
+}
+.user-side .profile .avatar {
+  margin-right: 10px;
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+  float: left;
+  border-radius: 50%;
+}
+.user-side .profile .avatar img{
+	width: 100%;
+}
+.user-side .profile .name{
+	width: 110px;
+	float: left;
+	padding-top: 16px;
+}
+.user-side .profile .name h2{
+	font-size: 16px;
+}
+.user-rank{
+	background: url(../image/user_rank.png) no-repeat;
+	height: 17px;
+	width: 90px;
+	color: #fff;
+	display: inline-block;
+	text-indent: 28px;
+}
+.user-rank-register{
+	background-position: -25px -217px;
+}
+.account .user-item .item-name{
+	width: 68px;
+	overflow: hidden;
+}
+.item-main .integrity{
+  display: inline-block;
+  width: 85px;
+  height: 5px;
+  border-radius: 3px;
+  background: #d2d2d2;
+  overflow: hidden;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+.item-main .integrity em{
+	background: #ff8f27;
+	float: left;
+	height: 100%;
+}
+.item-main i{
+	color: #97CA3D;
+	font-size: 17px;
+	margin-right: 20px;
+}
+.item-main div .small{
+  font-size: 19px;
+}
+.item-main div{
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+}
+.item-main div .tip{
+	position: absolute;
+	top: 30px;
+	left: 0;
+	background: #fff;
+	box-shadow: 0 0 10px rgba(0,0,0,.3);
+	padding: 2px 5px;
+  color: #999;
+  width: 100px;
+  transition: .4s;
+  opacity: 0;
+}
+.item-main div:hover .tip{
+	opacity: 1;
+}
+.side-menu{
+	border-bottom: 1px dotted #ddd;
+}
+.side-menu h3{
+	font-size: 16px;
+	padding: 10px 0;
+}
+.side-menu h3 i{
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	text-align: center;
+	line-height: 14px;
+	border: 1px solid #8c8c8c;
+	vertical-align: middle;
+	font-weight: initial;
+	cursor: pointer;
+	margin: -3px 10px 0 0;
+	color: #8c8c8c;
+	font-size:22px;
+}
+.side-menu li{
+	padding-left: 26px;
+	margin-bottom: 8px;
+}
+.side-menu li a{
+	font-size:14px;
+	color: #8c8c8c;
+}
+.side-menu li a:hover{
+	color: #333;
+}
+.state{
+	margin-bottom: 10px;
+}
+.state li{
+	width: 162px;
+	height: 75px;
+	margin-right: 10px;
+	background: #fff;
+	padding: 15px 30px;
+	float: left;
+}
+.state li:last-child{
+	margin-right: 0;
+}
+.state li .circle{
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 75px;
+	color: #fff;
+	font-size: 38px;
+	float: left;
+	margin-right: 20px;
+}
+.state li:first-child .circle{
+	background: #97D142;
+}
+.state li:nth-child(2) .circle{
+  background: #45C9D3;
+}
+.state li:nth-child(3) .circle{
+	background: #EE6CA5;
+}
+.state li:last-child .circle{
+	background: #B262F6;
+}
+.state li .info{
+	width: 72px;
+	float: left;
+	padding-top: 7px;
+	font-size: 16px;
+}
+.state li .info .num{
+	font-size: 30px;
+	color: #97D142;
+}
+.user-title{
+	height: 27px;
+	border-bottom: 1px solid #d1d1d1;
+	padding-bottom: 5px;
+	margin-bottom: 5px;
+}
+.user-title h2{
+	float: left;
+	font-size: 16px;
+	color: #555;
+	height: 27px;
+	line-height: 27px;
+	margin-right: 20px;
+}
+.user-title h2:before{
+	content: '';
+	float: left;
+	height: 16px;
+	width: 3px;
+	background: #333;
+	margin: 6px 10px 0 0;
+}
+.user-title .more{
+	float: right;
+	line-height: 27px;
+}
+.no_records{
+	height: 104px;
+	padding: 70px 0 70px 165px;
+	overflow: hidden;
+}
+.no_records .no_icon{
+	width: 159px;
+	height: 104px;
+	float: left;
+	background: url(../image/not-common-icon.png) no-repeat;
+}
+.no_records .on_info{
+	float: left;
+	margin-left: 25px;
+}
+.no_records .on_info h3{
+	font-size: 16px;
+	margin: 16px 0;
+}
+.no_records .no_btn a{
+	display: inline-block;
+	width: 70px;
+	height: 28px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	line-height: 28px;
+	text-align: center;
+	color: #333;
+}
+.no_records .no_btn a:hover{
+	background: #333;
+	color: #fff;
+}
+.user-help li:before{
+  content: '';
+  width: 4px;
+  height: 4px;
+  background: #888;
+  float: left;
+  margin:7px 10px 0 0;
+}
+.user-help{
+	padding-top: 20px;
+}
+.user-help li{
+	width: 96px;
+	float: left;
+  margin: 0 75px 10px 0;
+	overflow: hidden;
+	white-space: nowrap;
+}
