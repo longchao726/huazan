@@ -1,129 +1,133 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<title>用户中心-Rosewin鲜花网</title>
-	<link rel="stylesheet" type="text/css" href="css/base.css">
-	<link rel="stylesheet" type="text/css" href="css/user.css">
-	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-	<script src="js/ajax.js"></script>
+  <meta charset="UTF-8">
+  <title>用户中心-Rosewin鲜花网</title>
+  <link rel="stylesheet" type="text/css" href="css/base.css">
+  <link rel="stylesheet" type="text/css" href="css/user.css">
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+  <script src="js/ajax.js"></script>
 </head>
+
 <body onload="change()">
   <header class="bg header"></header>
-	<div class="reg_content">
-		<div class="reg_mian" id="reg_main">
-			<div class="login_box">
-				<ul>
-					<li id="login">账号登陆</li>
-					<li id="register" class="box_checked" >用户注册</li>
-					<div class="clear"></div>
-				</ul>	
-			</div>
-			<div class="swiper_hidden">
-				<div class="swiper" id="swiper">
-					<div class="swiper_login float_l">
-						<p id="login_switch">使用手机验证码登陆</p>
-						<div class="item">
-							<div class="hint_msg" id="log_uname_msg">
-								<span class="hint">手机号码不能为空</span>
-							  <span class="hint_sj"></span>
-							</div>
-							<i class="fa fa-phone-square fa-2x"></i>
-						  <input type="text" id="log_uname" placeholder="请输入手机号">
-						</div>
-						<div id="stateOpen">
-							<div class="item">
-								<div class="hint_msg" id="log_upwd_msg">
-									<span class="hint">密码不能为空</span>
-								  <span class="hint_sj"></span>
-							  </div>
-								<i class="fa fa-lock fa-2x"></i>
-							  <input type="password" id="log_upwd" placeholder="请输入密码">
-							</div>
-							<div class="item">
-							  <button id="log">登&nbsp;&nbsp;陆</button>
-						  </div>
-						</div>
-						<div id="stateClose">
-							<div class="item">
-								<div class="hint_msg" id="log_getCode1">
-								  <span class="hint">验证码为空</span>
-								  <span class="hint_sj"></span>
-							    </div>
-								<input type="text" placeholder="图形验证码" id="log_getCode" class="float_l">
-								<div id="log_code" class="float_l getCode" onclick="change()"></div>
-							<span onclick="change()">看不清？换一张</span>
-							</div>
-							<div class="item">
-								<div class="hint_msg" id="log_get_Code1">
-								  <span class="hint">验证码为空</span>
-								  <span class="hint_sj"></span>
-							    </div>
-								<i class="fa fa-envelope fa-2x small"></i>
-								<input type="text" placeholder="请输入手机验证码" id="msg_code1">
-								<button id="get_code1">获取短信验证码</button>
-							</div>
-							<div class="item">
-								<button id="log1">登&nbsp;&nbsp;陆</button>
-						  </div>
-						</div>
-						<span class="forget"><a href="">忘记密码？</a></span>
-					</div>
-					<div class="swiper_reg float_r">
-						<div class="item">
-							<div class="hint_msg" id="uname_msg">
-								<span class="hint">手机号码不能为空</span>
-							  <span class="hint_sj"></span>
-							</div>
-							<i class="fa fa-phone-square fa-2x"></i>
-						  <input type="text" id="uname" placeholder="请输入注册手机号">
-						</div>
-						<div class="item">
-							<div class="hint_msg" id="getCode1">
-								<span class="hint">验证码为空</span>
-							  <span class="hint_sj"></span>
-							</div>
-							<input type="text" placeholder="图形验证码" id="reg_code" class="float_l">
-							<div id="getCode" class="float_l getCode"></div>
-							<span onclick="change()">看不清？换一张</span>
-						</div>
-						<div class="item">
-							<div class="hint_msg" id="msgCode">
-								<span class="hint">短信验证码为空</span>
-							  <span class="hint_sj"></span>
-							</div>
-							<i class="fa fa-envelope fa-2x small"></i>
-							<input type="text" placeholder="请输入手机验证码" id="msg_code">
-							<button id="get_code">获取短信验证码</button>
-						</div>
-						<div class="item">
-							<div class="hint_msg" id="check_upwd">
-								<span class="hint">密码不能为空</span>
-							  <span class="hint_sj"></span>
-							</div>
-							<i class="fa fa-lock fa-2x"></i>
-						  <input type="password" id="upwd" placeholder="请输入密码">
-						</div>
-						<div class="item">
-							<div class="hint_msg" id="check_upwd1">
-								<span class="hint">密码不能为空</span>
-							  <span class="hint_sj"></span>
-							</div>
-							<i class="fa fa-get-pocket fa-2x small"></i>
-						  <input type="password" id="upwd1" placeholder="确认密码">
-						</div>
-						<div class="item">
-							<button id="reg">注&nbsp;&nbsp;册</button>
-						</div>
-						<span class="forget"><a href="">忘记密码？</a></span>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+  <div class="reg_content">
+    <div class="reg_mian" id="reg_main">
+      <div class="login_box">
+        <ul>
+          <li id="login">账号登陆</li>
+          <li id="register" class="box_checked">用户注册</li>
+          <div class="clear"></div>
+        </ul>
+      </div>
+      <div class="swiper_hidden">
+        <div class="swiper" id="swiper">
+          <div class="swiper_login float_l">
+            <p id="login_switch">使用手机验证码登陆</p>
+            <div class="item">
+              <div class="hint_msg" id="log_uname_msg">
+                <span class="hint">手机号码不能为空</span>
+                <span class="hint_sj"></span>
+              </div>
+              <i class="fa fa-phone-square fa-2x"></i>
+              <input type="text" id="log_uname" placeholder="请输入手机号">
+            </div>
+            <div id="stateOpen">
+              <div class="item">
+                <div class="hint_msg" id="log_upwd_msg">
+                  <span class="hint">密码不能为空</span>
+                  <span class="hint_sj"></span>
+                </div>
+                <i class="fa fa-lock fa-2x"></i>
+                <input type="password" id="log_upwd" placeholder="请输入密码">
+              </div>
+              <div class="item">
+                <button id="log">登&nbsp;&nbsp;陆</button>
+              </div>
+            </div>
+            <div id="stateClose">
+              <div class="item">
+                <div class="hint_msg" id="log_getCode1">
+                  <span class="hint">验证码为空</span>
+                  <span class="hint_sj"></span>
+                </div>
+                <input type="text" placeholder="图形验证码" id="log_getCode" class="float_l">
+                <div id="log_code" class="float_l getCode" onclick="change()"></div>
+                <span onclick="change()">看不清？换一张</span>
+              </div>
+              <div class="item">
+                <div class="hint_msg" id="log_get_Code1">
+                  <span class="hint">验证码为空</span>
+                  <span class="hint_sj"></span>
+                </div>
+                <i class="fa fa-envelope fa-2x small"></i>
+                <input type="text" placeholder="请输入手机验证码" id="msg_code1">
+                <button id="get_code1">获取短信验证码</button>
+              </div>
+              <div class="item">
+                <button id="log1">登&nbsp;&nbsp;陆</button>
+              </div>
+            </div>
+            <span class="forget"><a href="">忘记密码？</a></span>
+          </div>
+          <div class="swiper_reg float_r">
+            <div class="item">
+              <div class="hint_msg" id="uname_msg">
+                <span class="hint">手机号码不能为空</span>
+                <span class="hint_sj"></span>
+              </div>
+              <i class="fa fa-phone-square fa-2x"></i>
+              <input type="text" id="uname" placeholder="请输入注册手机号">
+            </div>
+            <div class="item">
+              <div class="hint_msg" id="getCode1">
+                <span class="hint">验证码为空</span>
+                <span class="hint_sj"></span>
+              </div>
+              <input type="text" placeholder="图形验证码" id="reg_code" class="float_l">
+              <div id="getCode" class="float_l getCode"></div>
+              <span onclick="change()">看不清？换一张</span>
+            </div>
+            <div class="item">
+              <div class="hint_msg" id="msgCode">
+                <span class="hint">短信验证码为空</span>
+                <span class="hint_sj"></span>
+              </div>
+              <i class="fa fa-envelope fa-2x small"></i>
+              <input type="text" placeholder="请输入手机验证码" id="msg_code">
+              <button id="get_code">获取短信验证码</button>
+            </div>
+            <div class="item">
+              <div class="hint_msg" id="check_upwd">
+                <span class="hint">密码不能为空</span>
+                <span class="hint_sj"></span>
+              </div>
+              <i class="fa fa-lock fa-2x"></i>
+              <input type="password" id="upwd" placeholder="请输入密码">
+            </div>
+            <div class="item">
+              <div class="hint_msg" id="check_upwd1">
+                <span class="hint">密码不能为空</span>
+                <span class="hint_sj"></span>
+              </div>
+              <i class="fa fa-get-pocket fa-2x small"></i>
+              <input type="password" id="upwd1" placeholder="确认密码">
+            </div>
+            <div class="item">
+              <button id="reg">注&nbsp;&nbsp;册</button>
+            </div>
+            <span class="forget"><a href="">忘记密码？</a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <footer class="footer"></footer>
 
-	<script type="text/javascript" src="js/login.js"></script>
-	<script src="js/head.js"></script>
+  <script type="text/javascript" src="js/login.js"></script>
+  <script src="js/head.js"></script>
+  <script src="js/foot.js"></script>
 </body>
+
 </html>

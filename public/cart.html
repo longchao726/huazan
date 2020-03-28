@@ -1,162 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<title>购物流程_鲜花速递_开业花篮_网上在线鲜花预定-Rosewin鲜花网</title>
-	<link rel="stylesheet" type="text/css" href="css/base.css">
-	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/cart.css">
-	<script src="js/comm.js"></script>
-	<script src="js/ajax.js"></script>
+  <meta charset="UTF-8">
+  <title>购物流程_鲜花速递_开业花篮_网上在线鲜花预定-Rosewin鲜花网</title>
+  <link rel="stylesheet" type="text/css" href="css/base.css">
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/cart.css">
+  <script src="js/comm.js"></script>
+  <script src="js/ajax.js"></script>
 </head>
+
 <body>
-	<header class="bg header"></header>
+  <header class="bg header"></header>
   <div class="content">
-  	<div class="cart_product">
-  		<div class="cart_pro_tit">
-  			<div class="cpt1">
-  				<label for="allPro1">
-  					<input type="checkbox" checked id="allPro1">全选
-  				</label>
-  			</div>
-  			<div class="cpt2">商品信息</div>
-  			<div class="cpt3">单价</div>
-  			<div class="cpt4">数量</div>
-  			<div class="cpt5">小计</div>
-  		</div>
-  		<div class="cartBox">
-  			<ul>
-  				<li>
-  					<div class="cart_check"><input type="checkbox" checked></div>
-  					<div class="cp_img">
-  						<a href=""><img src="image/1548669137_69562.jpg" alt=""></a>
-  					</div>
-  					<div class="cp_name">
-  						<a href="" title="爱的纪念-抖音网红气球翅膀抱抱桶">爱的纪念-抖音网红气球翅膀抱抱桶</a>
-  					</div>
-  					<div class="cp_price">￥699.00</div>
-  					<div class="cp_num">
-  						<p class="cp_num_m">
-  							<button class="cart_jian">-</button>
-  							<input type="text" value="1" class="cart_int">
-  							<button class="cart_jia">+</button>
-  						</p>
-  					</div>
-  					<div class="unitPrice">￥699.00</div>
-  					<div class="cp_btn">
-  						<a href="" title="删除">删除</a>
-  					</div>
-  				</li>
-  				<li>
-  					<div class="cart_check"><input type="checkbox" checked></div>
-  					<div class="cp_img">
-  						<a href=""><img src="image/1548669137_69562.jpg" alt=""></a>
-  					</div>
-  					<div class="cp_name">
-  						<a href="" title="爱的纪念-抖音网红气球翅膀抱抱桶">爱的纪念-抖音网红气球翅膀抱抱桶</a>
-  					</div>
-  					<div class="cp_price">￥699.00</div>
-  					<div class="cp_num">
-  						<p class="cp_num_m">
-  							<button class="cart_jian">-</button>
-  							<input type="text" value="1" class="cart_int">
-  							<button class="cart_jia">+</button>
-  						</p>
-  					</div>
-  					<div class="unitPrice">￥699.00</div>
-  					<div class="cp_btn">
-  						<a href="" title="删除">删除</a>
-  					</div>
-  				</li>
-  			</ul>
-  		</div>
-  		<div class="cartBar">
-  			<div class="cartBar_t">
-  				<div class="cartBar_m float_l">
-  					<div class="cbm_check float_l">
-  						<label for="allPro2">
-  							<input type="checkbox" checked id="allPro2">全选
-  						</label>
-  					</div>
-  					<div class="cbm_del float_l">
-  					  <a href="">删除选中的商品</a>
-  					</div>
-  				</div>
-  				<div class="cbm_price float_r">
-						已选商品 <span class="cbm_choseNum">1</span> 件 &nbsp;&nbsp;&nbsp;总价( 不含运费)： 
-						<span class="cbm_pay_price">￥699.00</span>
-  				</div>
-  				<div class="clear"></div>
-  				<div class="cartBar_btn">
-  					<a href="index.html">继续购物</a>
-  					<button>立即结算</button>
-  				</div>
-  				<div class="clear"></div>
-  			</div>
-  		</div>
-  		<div class="cartLike">
-  			<div class="cartLike_t">
-  				<p>猜你喜欢</p>
-  			</div>
-  			<div class="guess_like cartLike_m">
-  				<ul>
-  					<li>
-  						<a href="">
-  							<img src="image/1530170253_35795.jpg" alt="">
-  							<div class="recommend_name">
-  								<p class="rec_t">小幸运</p>
-  								<p class="rec_n">小清新礼盒装</p>
-  								<p>￥599</p>
-  							</div>
-  						</a>
-  					</li>
-  					<li>
-  						<a href="">
-  							<img src="image/1530170442_21427.jpg" alt="">
-  							<div class="recommend_name">
-  								<p class="rec_t">陌上开花</p>
-  								<p class="rec_n">99朵粉红雪山</p>
-  								<p>￥1199</p>
-  							</div>
-  						</a>
-  					</li>
-  					<li>
-  						<a href="">
-  							<img src="image/1530174027_33351.jpg" alt="">
-  							<div class="recommend_name">
-  								<p class="rec_t">闻香识爱</p>
-  								<p class="rec_n">16朵戴安娜</p>
-  								<p>￥699</p>
-  							</div>
-  						</a>
-  					</li>
-  					<li>
-  						<a href="">
-  							<img src="image/1533005114_32831.jpg" alt="">
-  							<div class="recommend_name">
-  								<p class="rec_t">叶上胭脂</p>
-  								<p class="rec_n">19朵厄瓜多尔红玫瑰</p>
-  								<p>￥1499</p>
-  							</div>
-  						</a>
-  					</li>
-  					<li>
-  						<a href="">
-  							<img src="image/1534840829_53772.jpg" alt="">
-  							<div class="recommend_name">
-  								<p class="rec_t">初遇</p>
-  								<p class="rec_n">52朵戴安娜玫瑰</p>
-  								<p>￥799</p>
-  							</div>
-  						</a>
-  					</li>
-  				</ul>
-  			</div>
-  		</div>
-  	</div>
+    <div class="cart_product">
+      <div class="cart_pro_tit">
+        <div class="cpt1">
+          <label for="allPro1">
+            <input type="checkbox" checked id="allPro1">全选
+          </label>
+        </div>
+        <div class="cpt2">商品信息</div>
+        <div class="cpt3">单价</div>
+        <div class="cpt4">数量</div>
+        <div class="cpt5">小计</div>
+      </div>
+      <div class="cartBox">
+        <ul>
+          <li>
+            <div class="cart_check"><input type="checkbox" checked></div>
+            <div class="cp_img">
+              <a href=""><img src="image/1548669137_69562.jpg" alt=""></a>
+            </div>
+            <div class="cp_name">
+              <a href="" title="爱的纪念-抖音网红气球翅膀抱抱桶">爱的纪念-抖音网红气球翅膀抱抱桶</a>
+            </div>
+            <div class="cp_price">￥699.00</div>
+            <div class="cp_num">
+              <p class="cp_num_m">
+                <button class="cart_jian">-</button>
+                <input type="text" value="1" class="cart_int">
+                <button class="cart_jia">+</button>
+              </p>
+            </div>
+            <div class="unitPrice">￥699.00</div>
+            <div class="cp_btn">
+              <a href="" title="删除">删除</a>
+            </div>
+          </li>
+          <li>
+            <div class="cart_check"><input type="checkbox" checked></div>
+            <div class="cp_img">
+              <a href=""><img src="image/1548669137_69562.jpg" alt=""></a>
+            </div>
+            <div class="cp_name">
+              <a href="" title="爱的纪念-抖音网红气球翅膀抱抱桶">爱的纪念-抖音网红气球翅膀抱抱桶</a>
+            </div>
+            <div class="cp_price">￥699.00</div>
+            <div class="cp_num">
+              <p class="cp_num_m">
+                <button class="cart_jian">-</button>
+                <input type="text" value="1" class="cart_int">
+                <button class="cart_jia">+</button>
+              </p>
+            </div>
+            <div class="unitPrice">￥699.00</div>
+            <div class="cp_btn">
+              <a href="" title="删除">删除</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="cartBar">
+        <div class="cartBar_t">
+          <div class="cartBar_m float_l">
+            <div class="cbm_check float_l">
+              <label for="allPro2">
+                <input type="checkbox" checked id="allPro2">全选
+              </label>
+            </div>
+            <div class="cbm_del float_l">
+              <a href="">删除选中的商品</a>
+            </div>
+          </div>
+          <div class="cbm_price float_r">
+            已选商品 <span class="cbm_choseNum">1</span> 件 &nbsp;&nbsp;&nbsp;总价( 不含运费)：
+            <span class="cbm_pay_price">￥699.00</span>
+          </div>
+          <div class="clear"></div>
+          <div class="cartBar_btn">
+            <a href="index.html">继续购物</a>
+            <button>立即结算</button>
+          </div>
+          <div class="clear"></div>
+        </div>
+      </div>
+      <div class="cartLike">
+        <div class="cartLike_t">
+          <p>猜你喜欢</p>
+        </div>
+        <div class="guess_like cartLike_m">
+          <ul>
+            <li>
+              <a href="">
+                <img src="image/1530170253_35795.jpg" alt="">
+                <div class="recommend_name">
+                  <p class="rec_t">小幸运</p>
+                  <p class="rec_n">小清新礼盒装</p>
+                  <p>￥599</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img src="image/1530170442_21427.jpg" alt="">
+                <div class="recommend_name">
+                  <p class="rec_t">陌上开花</p>
+                  <p class="rec_n">99朵粉红雪山</p>
+                  <p>￥1199</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img src="image/1530174027_33351.jpg" alt="">
+                <div class="recommend_name">
+                  <p class="rec_t">闻香识爱</p>
+                  <p class="rec_n">16朵戴安娜</p>
+                  <p>￥699</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img src="image/1533005114_32831.jpg" alt="">
+                <div class="recommend_name">
+                  <p class="rec_t">叶上胭脂</p>
+                  <p class="rec_n">19朵厄瓜多尔红玫瑰</p>
+                  <p>￥1499</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img src="image/1534840829_53772.jpg" alt="">
+                <div class="recommend_name">
+                  <p class="rec_t">初遇</p>
+                  <p class="rec_n">52朵戴安娜玫瑰</p>
+                  <p>￥799</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </div>
-	<footer class="footer"></footer>
-	<script src="js/user.js"></script>
-	<script src="js/head.js"></script>
+  <footer class="footer"></footer>
+  <script src="js/user.js"></script>
+  <script src="js/head.js"></script>
+  <script src="js/foot.js"></script>
 </body>
+
 </html>

@@ -1,36 +1,38 @@
 <!DOCTYPE html>
 <html>
-<head> 
-	<meta charset="UTF-8">
-	<title>-Rosewin鲜花网</title>
-	<link rel="stylesheet" type="text/css" href="css/base.css">
-	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-	<script src="js/ajax.js"></script>
+
+<head>
+  <meta charset="UTF-8">
+  <title>-Rosewin鲜花网</title>
+  <link rel="stylesheet" type="text/css" href="css/base.css">
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+  <script src="js/ajax.js"></script>
 </head>
+
 <body style="background: #f5f5f5">
   <header class="bg header"></header>
   <section class="pro_det">
-  	<div class="content">
+    <div class="content">
       <table></table>
-  		<div class="pro_top">
-  			<div class="pro_l float_l">
-  				<div class="pro_img float_l">
-  					<div class="next"></div>
-  					<ul>
-  						<li><img src=""></li>
-  					</ul>
-  					<div class="last"></div>
-  				</div>
-  				<div class="pro_big float_r" id="pro_big">
-  					<div class="small_img">
-  						<img src="" width="400">
-  						<div class="mask"></div>
-  					</div>
-  					<div class="big_img">
-  						<img src="" width="800">
-  					</div>
-  				</div>
-  			</div>
+      <div class="pro_top">
+        <div class="pro_l float_l">
+          <div class="pro_img float_l">
+            <div class="next"></div>
+            <ul>
+              <li><img src=""></li>
+            </ul>
+            <div class="last"></div>
+          </div>
+          <div class="pro_big float_r" id="pro_big">
+            <div class="small_img">
+              <img src="" width="400">
+              <div class="mask"></div>
+            </div>
+            <div class="big_img">
+              <img src="" width="800">
+            </div>
+          </div>
+        </div>
         <div class="pro_r float_l">
           <p class="pro_title">
             <a href=""></a>
@@ -69,131 +71,135 @@
           </div>
           <div class="clear"></div>
           <div class="add">
-          	<button>加入购物车</button>
-          	<button class="add_buy">即刻购买</button>
+            <button>加入购物车</button>
+            <button class="add_buy">即刻购买</button>
           </div>
           <div id="pro_collect" title="加入收藏">
-          	
+
           </div>
-           <div id="pro_share" title="分享">
-             <div class="pro_share_m" id="show_share">
-             	 <div class="header_sj">
-             	 </div>
-             	 <div class="btn_share">
-             	   <a href="" title="分享到微信" id="to_wx"></a>
-             	   <a href="" title="分享到微博" id="to_sina"></a>
-             	   <a href="" title="分享到QQ" id="to_qq"></a>	 
-             	 </div>
-             </div>
+          <div id="pro_share" title="分享">
+            <div class="pro_share_m" id="show_share">
+              <div class="header_sj">
+              </div>
+              <div class="btn_share">
+                <a href="" title="分享到微信" id="to_wx"></a>
+                <a href="" title="分享到微博" id="to_sina"></a>
+                <a href="" title="分享到QQ" id="to_qq"></a>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="clear"></div> 
-  		</div>
-  		<div class="proTab">
-  			<ul>
-  				<li class="current">商品详情</li>
-  				<li>售后保障</li>
-  			</ul>
-  			<div class="proTab_btn float_r">
-  				<button id="btn_shopping1">加入购物车</button>
-  				<button id="btn_shopping2">即刻购买</button>
-  			</div>
-  		</div>
-  		<div class="pro_story">
-  			<div class="pro_pubtit">
-  				<div class="tabTitle">
-  					<p>Brand Story</p>
-  					<h3>品牌故事</h3>
-  				</div>
-  			</div>
-  			<div class="brand_story">
-  				<div class="proBrand_l float_l">
-  					<p>Rosewin寓意花赞，鲜花礼赞爱情，专注于轻奢鲜花创意设计，10余年成就全国知名品牌。Rosewin精心打造的APP，订花更便捷：精准推荐设计师款，精心呈现每个细节，同时提供专业定制，致敬生活美学，将浪漫做到极致。</p>
-  				</div>
-  				<div class="proBrand_r float_r">
-  					<img src="image/goods_brand_ico.jpg" alt="">
-  				</div>
-  			</div>
-  			<div class="clear"></div>
-  		</div>
-  		<div class="pro_story">
-  			<div class="pro_pubtit">
-  				<div class="tabTitle">
-  					<p>Product Details</p>
-  					<h3>商品详情</h3>
-  				</div>
-  			</div>
-  			<div class="proImg">
-  				
-  			</div>
-  		</div>
-  		<div class="pro_story">
-  			<div class="pro_pubtit">
-  				<div class="tabTitle">
-  					<p>Guess Your Like</p>
-  					<h3>猜你喜欢</h3>
-  				</div>
-  			</div>
-  			<div class="guess_like">
-  				<ul>
-  					<li>
-  						<a href="">
-  							<img src="image/1530170253_35795.jpg" alt="">
-  							<div class="recommend_name">
-  								<p class="rec_t">小幸运</p>
-  								<p class="rec_n">小清新礼盒装</p>
-  								<p>￥599</p>
-  							</div>
-  						</a>
-  					</li>
-  					<li>
-  						<a href="">
-  							<img src="image/1530170442_21427.jpg" alt="">
-  							<div class="recommend_name">
-  								<p class="rec_t">陌上开花</p>
-  								<p class="rec_n">99朵粉红雪山</p>
-  								<p>￥1199</p>
-  							</div>
-  						</a>
-  					</li>
-  					<li>
-  						<a href="">
-  							<img src="image/1530174027_33351.jpg" alt="">
-  							<div class="recommend_name">
-  								<p class="rec_t">闻香识爱</p>
-  								<p class="rec_n">16朵戴安娜</p>
-  								<p>￥699</p>
-  							</div>
-  						</a>
-  					</li>
-  					<li>
-  						<a href="">
-  							<img src="image/1533005114_32831.jpg" alt="">
-  							<div class="recommend_name">
-  								<p class="rec_t">叶上胭脂</p>
-  								<p class="rec_n">19朵厄瓜多尔红玫瑰</p>
-  								<p>￥1499</p>
-  							</div>
-  						</a>
-  					</li>
-  					<li>
-  						<a href="">
-  							<img src="image/1534840829_53772.jpg" alt="">
-  							<div class="recommend_name">
-  								<p class="rec_t">初遇</p>
-  								<p class="rec_n">52朵戴安娜玫瑰</p>
-  								<p>￥799</p>
-  							</div>
-  						</a>
-  					</li>
-  				</ul>
-  			</div>
-  		</div>
-		</div>
-		<div class="clear"></div>
+        <div class="clear"></div>
+      </div>
+      <div class="proTab">
+        <ul>
+          <li class="current">商品详情</li>
+          <li>售后保障</li>
+        </ul>
+        <div class="proTab_btn float_r">
+          <button id="btn_shopping1">加入购物车</button>
+          <button id="btn_shopping2">即刻购买</button>
+        </div>
+      </div>
+      <div class="pro_story">
+        <div class="pro_pubtit">
+          <div class="tabTitle">
+            <p>Brand Story</p>
+            <h3>品牌故事</h3>
+          </div>
+        </div>
+        <div class="brand_story">
+          <div class="proBrand_l float_l">
+            <p>
+              Rosewin寓意花赞，鲜花礼赞爱情，专注于轻奢鲜花创意设计，10余年成就全国知名品牌。Rosewin精心打造的APP，订花更便捷：精准推荐设计师款，精心呈现每个细节，同时提供专业定制，致敬生活美学，将浪漫做到极致。
+            </p>
+          </div>
+          <div class="proBrand_r float_r">
+            <img src="image/goods_brand_ico.jpg" alt="">
+          </div>
+        </div>
+        <div class="clear"></div>
+      </div>
+      <div class="pro_story">
+        <div class="pro_pubtit">
+          <div class="tabTitle">
+            <p>Product Details</p>
+            <h3>商品详情</h3>
+          </div>
+        </div>
+        <div class="proImg">
+
+        </div>
+      </div>
+      <div class="pro_story">
+        <div class="pro_pubtit">
+          <div class="tabTitle">
+            <p>Guess Your Like</p>
+            <h3>猜你喜欢</h3>
+          </div>
+        </div>
+        <div class="guess_like">
+          <ul>
+            <li>
+              <a href="">
+                <img src="image/1530170253_35795.jpg" alt="">
+                <div class="recommend_name">
+                  <p class="rec_t">小幸运</p>
+                  <p class="rec_n">小清新礼盒装</p>
+                  <p>￥599</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img src="image/1530170442_21427.jpg" alt="">
+                <div class="recommend_name">
+                  <p class="rec_t">陌上开花</p>
+                  <p class="rec_n">99朵粉红雪山</p>
+                  <p>￥1199</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img src="image/1530174027_33351.jpg" alt="">
+                <div class="recommend_name">
+                  <p class="rec_t">闻香识爱</p>
+                  <p class="rec_n">16朵戴安娜</p>
+                  <p>￥699</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img src="image/1533005114_32831.jpg" alt="">
+                <div class="recommend_name">
+                  <p class="rec_t">叶上胭脂</p>
+                  <p class="rec_n">19朵厄瓜多尔红玫瑰</p>
+                  <p>￥1499</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img src="image/1534840829_53772.jpg" alt="">
+                <div class="recommend_name">
+                  <p class="rec_t">初遇</p>
+                  <p class="rec_n">52朵戴安娜玫瑰</p>
+                  <p>￥799</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="clear"></div>
   </section>
   <footer class="footer"></footer>
-	<script type="text/javascript" src="js/detail.js"></script>
-	<script src="js/head.js"></script>
+  <script type="text/javascript" src="js/detail.js"></script>
+  <script src="js/head.js"></script>
+  <script src="js/foot.js"></script>
 </body>
+
 </html>
